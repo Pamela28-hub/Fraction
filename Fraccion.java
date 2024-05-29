@@ -33,7 +33,10 @@ public class Fraccion {
   int getNumerador(){
     return this.numerador;
   }
-
+  /**
+   * Devuelve una representación en forma de cadena de la fracción.
+   * @return una cadena que representa la fracción en formato "numerador/denominador"
+   */
   int getDenominador(){
     return this.denominador;
   }
