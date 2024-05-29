@@ -67,7 +67,11 @@ public class Fraccion {
   public Fraccion multiplica(int n) {
     return new Fraccion(this.signo * this.numerador * n, this.denominador);
   }
-
+  /**
+   * Multiplica la fracción por otra fracción.
+   * @param f la fracción por la cual se multiplica la fracción original
+   * @return una nueva fracción que es el producto de las dos fracciones
+   */
   public Fraccion multiplica(Fraccion f) {
     return new Fraccion(
       this.signo * this.numerador * f.getNumerador(),
