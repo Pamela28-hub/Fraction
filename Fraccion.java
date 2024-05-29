@@ -40,9 +40,10 @@ public class Fraccion {
   int getDenominador(){
     return this.denominador;
   }
-
-
-
+  /**
+   * Devuelve una representación en forma de cadena de la fracción.
+   * @return una cadena que representa la fracción en formato "numerador/denominador"
+   */
   public String toString() {
     if (signo == -1) {
       return "-" + this.numerador + "/" + this.denominador;
