@@ -51,9 +51,10 @@ public class Fraccion {
       return this.numerador + "/" + this.denominador;
     }
   }
-
-
-
+  /**
+   * Invierte la fracción.
+   * @return una nueva fracción que es la inversa de la fracción original
+   */
   public Fraccion invierte() {
     return new Fraccion(this.signo * this.denominador, this.numerador);
   }
