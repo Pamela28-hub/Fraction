@@ -97,8 +97,10 @@ public class Fraccion {
       this.signo * this.numerador * f.getDenominador(),
       denominador * f.getNumerador());
   }
-
-    
+  /**
+   * Simplifica la fracción.
+   * @return una nueva fracción que es la fracción simplificada de la fracción original
+   */
   public Fraccion simplifica() {
     
     final int s = this.signo;
