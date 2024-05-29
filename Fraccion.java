@@ -1,10 +1,18 @@
+/**
+ * Clase que representa una fracción
+ */
 public class Fraccion {
   
   private int signo;
   private int numerador;
   private int denominador;
-  
-  public Fraccion(int n, int d) {
+
+    /**
+     * Contructor de fracción con numerador y denominador
+     * @param n el numerador de la fracción
+     * @param d el denominador de la fracción, no puede tener valor 0
+     */
+    public Fraccion(int n, int d) {
     if (d == 0) {
       System.out.println("Una fracción no puede tener como denominador el número 0");
     } else {
@@ -18,14 +26,17 @@ public class Fraccion {
     }
   }
 
+
   int getNumerador(){
     return this.numerador;
   }
-  
+
   int getDenominador(){
     return this.denominador;
   }
-  
+
+
+
   public String toString() {
     if (signo == -1) {
       return "-" + this.numerador + "/" + this.denominador;
@@ -34,35 +45,35 @@ public class Fraccion {
     }
   }
 
+
+
   public Fraccion invierte() {
     return new Fraccion(this.signo * this.denominador, this.numerador);
   }
-  
+
   
   public Fraccion multiplica(int n) {
     return new Fraccion(this.signo * this.numerador * n, this.denominador);
   }
 
- 
   public Fraccion multiplica(Fraccion f) {
     return new Fraccion(
       this.signo * this.numerador * f.getNumerador(),
       this.denominador * f.getDenominador());
   }
 
- 
+
   public Fraccion divide(int n) {
     return new Fraccion(this.signo * this.numerador, this.denominador * n);
   }
 
-  
   public Fraccion divide(Fraccion f) {
     return new Fraccion(
       this.signo * this.numerador * f.getDenominador(),
       denominador * f.getNumerador());
   }
 
-  
+    
   public Fraccion simplifica() {
     
     final int s = this.signo;
