@@ -59,7 +59,11 @@ public class Fraccion {
     return new Fraccion(this.signo * this.denominador, this.numerador);
   }
 
-  
+  /**
+   * Multiplica la fracción por un entero.
+   * @param n el entero por el cual se multiplica la fracción
+   * @return una nueva fracción que es el producto de la fracción original y el entero dado
+   */
   public Fraccion multiplica(int n) {
     return new Fraccion(this.signo * this.numerador * n, this.denominador);
   }
