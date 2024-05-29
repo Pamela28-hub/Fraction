@@ -87,6 +87,11 @@ public class Fraccion {
     return new Fraccion(this.signo * this.numerador, this.denominador * n);
   }
 
+  /**
+   * Divide la fracción por otra fracción.
+   * @param f la fracción por la cual se divide la fracción original
+   * @return una nueva fracción que es el resultado de la división de las dos fracciones
+   */
   public Fraccion divide(Fraccion f) {
     return new Fraccion(
       this.signo * this.numerador * f.getDenominador(),
