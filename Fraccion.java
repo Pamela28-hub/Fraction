@@ -25,7 +25,10 @@ public class Fraccion {
       this.denominador = Math.abs(d);
     }
   }
-
+  /**
+   * Obtiene el numerador de la fracción.
+   * @return el numerador de la fracción
+   */
 
   int getNumerador(){
     return this.numerador;
